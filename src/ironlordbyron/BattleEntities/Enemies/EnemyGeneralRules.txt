@@ -1,0 +1,6 @@
+﻿Okay, so here's how we're doing this:
+
+1)  In Act 1, normal enemies are expected to deal on average 10 damage per turn to the party.  
+Combat should be expected to last 5 turns.
+Act 2: 30 damage
+Act 3: 50 damage
