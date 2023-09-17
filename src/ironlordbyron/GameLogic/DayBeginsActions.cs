@@ -1,8 +1,7 @@
-﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class DayBeginsActions : MonoBehaviour
+public class DayBeginsActions
 {
 
     public static void ApplyTriggers()

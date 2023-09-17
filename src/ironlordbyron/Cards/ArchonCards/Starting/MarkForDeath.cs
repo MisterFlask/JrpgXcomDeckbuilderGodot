@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
 using Assets.CodeAssets.Cards.ArchonCards.Effects;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.ArchonCards.Starting
 {

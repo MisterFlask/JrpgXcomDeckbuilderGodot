@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.Cards;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.BadCards
 {

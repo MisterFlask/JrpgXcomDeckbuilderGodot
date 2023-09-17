@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.DiabolistCards.Uncommon
 {
-    public class BloodDebt : MonoBehaviour
+    public class BloodDebt
     {
         // Attack: Deal 8 damage to an enemy.  Cost 1.
         // if the diabolist would die while this is in your deck, 

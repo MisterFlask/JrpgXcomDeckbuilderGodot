@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.Summer
 {
@@ -10,7 +9,7 @@ namespace Assets.CodeAssets.BattleEntities.Enemies.Summer
     ///  2)  Deals:  Offers money each combat in exchange for adding permanent disability to particular soldiers.  The card allowing the player to make this deal
     ///  // duplicates each go around in the deck until it's taken (at which point all Bargains exhaust in the combat.)
     /// </summary>
-    public class Summer : MonoBehaviour
+    public class Summer
     {
     }
 }

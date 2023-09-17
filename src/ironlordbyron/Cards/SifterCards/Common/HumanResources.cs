@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.BattleEntities.StatusEffects;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.SifterCards.Common
 {

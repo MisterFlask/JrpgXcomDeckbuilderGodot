@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.Cards.BlackhandCards.Attacks;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.BlackhandCards.Powers
 {

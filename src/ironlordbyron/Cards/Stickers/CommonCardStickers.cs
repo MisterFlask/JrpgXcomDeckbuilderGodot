@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.Stickers
 {
-    public class CommonCardStickers : MonoBehaviour
+    public class CommonCardStickers
     {
 
     }

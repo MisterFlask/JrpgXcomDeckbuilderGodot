@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.DiabolistCards.Rare
 {
-    public class UnbindFromReality : MonoBehaviour
+    public class UnbindFromReality
     {
         // cost 3.
         // Buster.

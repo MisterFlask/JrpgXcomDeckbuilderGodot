@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.ArchonCards.Rare
 {
-    public class SendInTheNextWave : MonoBehaviour
+    public class SendInTheNextWave
     {
         // ALL allies gain 1 strength and 1 dexterity.
         // Passive: If another character would die for the first time in this combat,

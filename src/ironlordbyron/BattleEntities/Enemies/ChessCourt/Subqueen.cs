@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.BattleEntities.Intents;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.ChessCourt
 {

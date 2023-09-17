@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Linq;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.CogCards.Rare
 {

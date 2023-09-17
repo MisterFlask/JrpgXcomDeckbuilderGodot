@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.Madness
 {
-    public class Sluggish : MonoBehaviour
+    public class Sluggish
     {
         // when drawn, apply 3 vulnerable
         // snail.jpg

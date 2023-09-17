@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
 using Assets.CodeAssets.GameLogic.BattleRules;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.DiabolistCards.Uncommon
 {

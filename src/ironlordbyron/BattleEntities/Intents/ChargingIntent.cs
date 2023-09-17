@@ -1,9 +1,7 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Intents
 {
-    using UnityEngine;
     using System.Collections;
     using System.Collections.Generic;
 

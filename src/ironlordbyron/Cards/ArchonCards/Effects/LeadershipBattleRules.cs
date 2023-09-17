@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.ArchonCards.Effects
 {

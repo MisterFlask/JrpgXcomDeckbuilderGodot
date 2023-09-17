@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
 using System.Collections;
 using System.Linq;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.ArchonCards.Rare
 {

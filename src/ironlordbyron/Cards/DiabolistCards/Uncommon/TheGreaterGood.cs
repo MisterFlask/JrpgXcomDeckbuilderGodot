@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.DiabolistCards.Uncommon
 {
-    public class TheGreaterGood : MonoBehaviour
+    public class TheGreaterGood
     {
         // cost 2
         // ALL allies gain 3 block.

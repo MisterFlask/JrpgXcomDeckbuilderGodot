@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.BattleEntities.Intents;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.EnemyPassiveAbilities
 {

@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.Columbal
 {
-    public class ColumbalOfficer : MonoBehaviour
+    public class ColumbalOfficer 
     {
         public ColumbalOfficer()
         {

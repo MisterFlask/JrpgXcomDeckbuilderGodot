@@ -2,7 +2,6 @@
 using Assets.CodeAssets.Cards.ArchonCards.Effects;
 using Assets.CodeAssets.GameLogic;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.DiabolistCards.Uncommon
 {

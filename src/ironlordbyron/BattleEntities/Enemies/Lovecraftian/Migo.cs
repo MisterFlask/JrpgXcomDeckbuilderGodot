@@ -1,7 +1,6 @@
 using Assets.CodeAssets.BattleEntities.Enemies.EnemyPassiveAbilities;
 using Assets.CodeAssets.Cards;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class Migo : AbstractBattleUnit
 {

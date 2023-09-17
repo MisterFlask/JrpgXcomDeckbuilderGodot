@@ -1,19 +1,18 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+using Godot;
+using System;
 
-public class CardStickerPrefab : MonoBehaviour
+public class CardStickerPrefab : Node2D
 {
-    public Image image;
+	public Image Image;
 
-    public AbstractCardSticker Sticker { get; set; }
+	public AbstractCardSticker Sticker { get; set; }
 
-    public void Update()
-    {
-        if (Sticker == null)
-        {
-            return;
-        }
-        image.SetProtoSprite(Sticker.ProtoSprite);
-    }
+	public override void _Process(float delta)
+	{
+		if (Sticker == null)
+		{
+			return;
+		}
+		Image.SetProtoSprite(Sticker.ProtoSprite);
+	}
 }

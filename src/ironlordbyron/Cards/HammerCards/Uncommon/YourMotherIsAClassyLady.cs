@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.HammerCards.Uncommon
 {
-    public class YourMotherIsAClassyLady : MonoBehaviour
+    public class YourMotherIsAClassyLady 
     {
         // Whenever you taunt an enemy, apply 2 Marked.
     }

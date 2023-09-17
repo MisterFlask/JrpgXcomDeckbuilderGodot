@@ -2,7 +2,6 @@
 using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
 using Assets.CodeAssets.Cards.HammerCards.Common;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.HammerCards.Uncommon
 {

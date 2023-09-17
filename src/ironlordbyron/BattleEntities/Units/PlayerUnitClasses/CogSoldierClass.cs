@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.Cards.CogCards.Starting;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses
 {

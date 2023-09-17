@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.Cards.BlackhandCards.Attacks;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses
 {

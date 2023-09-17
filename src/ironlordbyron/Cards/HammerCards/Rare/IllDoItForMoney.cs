@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEngine;
 using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
 namespace Assets.CodeAssets.Cards.HammerCards.Rare
 {

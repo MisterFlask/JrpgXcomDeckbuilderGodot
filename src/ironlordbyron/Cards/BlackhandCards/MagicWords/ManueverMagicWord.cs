@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.GameLogic;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.BlackhandCards.MagicWords
 {

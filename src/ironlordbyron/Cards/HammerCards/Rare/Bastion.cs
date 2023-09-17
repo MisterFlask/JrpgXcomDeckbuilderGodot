@@ -1,7 +1,6 @@
 ﻿using Assets.CodeAssets.BattleEntities.StatusEffects;
 using System.Collections;
 using Assets.CodeAssets.BattleEntities.Units.PlayerUnitClasses;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.HammerCards.Rare
 {

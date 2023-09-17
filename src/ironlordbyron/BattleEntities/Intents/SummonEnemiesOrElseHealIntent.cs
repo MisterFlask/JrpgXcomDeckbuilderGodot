@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
+using Godot;
 namespace Assets.CodeAssets.BattleEntities.Intents
 {
     public class SummonEnemiesOrElseHealIntent : AbstractIntent
@@ -59,7 +58,7 @@ namespace Assets.CodeAssets.BattleEntities.Intents
             return true;
         }
 
-        protected override IntentPrefab GeneratePrefab(GameObject parent)
+        protected override IntentPrefab GeneratePrefab(Node2D parent)
         {
             throw new System.NotImplementedException();
         }

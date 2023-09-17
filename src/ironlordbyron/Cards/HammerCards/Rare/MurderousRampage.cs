@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.HammerCards.Common
 {
-    public class MurderousRampage : MonoBehaviour
+    public class MurderousRampage 
     {
         // At the beginning of your turn, add an Incoherent Rage to your hand.
 

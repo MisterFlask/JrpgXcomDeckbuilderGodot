@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.CogCards.Rare
 {
-    public class MidnightOil : MonoBehaviour
+    public class MidnightOil
     {
         // Gain 4 stress.
         // Gain 1 energy over the next 4 turns.

@@ -1,4 +1,3 @@
-﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -36,11 +35,12 @@ public class SingleUnitAttackIntent : AbstractIntent
     public int BaseDamage { get; }
     public int NumberOfTimesStruck { get; }
 
-    protected override IntentPrefab GeneratePrefab(GameObject parent)
+    protected override IntentPrefab GeneratePrefab(Node2D parent)
     {
-        var parentPrefab = ServiceLocator.GameObjectTemplates().AttackPrefab;
-        var returnedPrefab = parentPrefab.Spawn(parent.transform);
-        return returnedPrefab;
+        //var parentPrefab = ServiceLocator.GameObjectTemplates().AttackPrefab;
+        //var returnedPrefab = parentPrefab.Spawn(parent.transform);
+        //return returnedPrefab;
+        throw new Exception("not implemented yet");
     }
 
     protected override void Execute()

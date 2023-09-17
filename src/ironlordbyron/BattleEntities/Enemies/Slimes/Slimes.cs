@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies
 {
@@ -10,7 +9,7 @@ namespace Assets.CodeAssets.BattleEntities.Enemies
     /// Growth mechanic: upgrades visually and gains buff if not killed within 3 turns.
     /// 
     /// </summary>
-    public class Slimes : MonoBehaviour
+    public class Slimes
     {
 
         // Use this for initialization

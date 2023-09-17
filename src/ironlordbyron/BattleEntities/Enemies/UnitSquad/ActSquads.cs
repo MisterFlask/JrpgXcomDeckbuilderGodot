@@ -4,7 +4,6 @@ using Assets.CodeAssets.BattleEntities.Enemies.Summer;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Enemies.UnitSquad
 {

@@ -1,4 +1,3 @@
-﻿using UnityEngine;
 using System.Collections;
 using System.Linq;
 using Assets.CodeAssets.Cards;

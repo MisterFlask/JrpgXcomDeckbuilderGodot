@@ -1,6 +1,5 @@
 ﻿using Assets.CodeAssets.Cards.ArchonCards.Effects;
 using System.Collections;
-using UnityEngine;
 
 namespace Assets.CodeAssets.Cards.HammerCards.Rare
 {

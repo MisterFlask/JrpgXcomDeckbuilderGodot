@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.CodeAssets.BattleEntities.Intents
 {
@@ -26,7 +25,7 @@ namespace Assets.CodeAssets.BattleEntities.Intents
             
         }
 
-        protected override IntentPrefab GeneratePrefab(GameObject parent)
+        protected override IntentPrefab GeneratePrefab(Node2D parent)
         {
             var parentPrefab = ServiceLocator.GameObjectTemplates().AttackPrefab;
             var returnedPrefab = parentPrefab.Spawn(parent.transform);
