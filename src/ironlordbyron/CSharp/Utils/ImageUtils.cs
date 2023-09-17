@@ -31,10 +31,6 @@ public abstract class ProtoGameSprite
 {
     public abstract GameSprite ToGameSpriteImage();
 
-    public Texture ToTexture()
-    {
-        return ToGameSpriteImage().Sprite;
-    }
 
     // convenience methods follow
     public static ProtoGameSprite Default => ImageUtils.ProtoGameSpriteFromGameIcon();
@@ -50,35 +46,10 @@ public abstract class ProtoGameSprite
         string path = ImageUtils.MeepleImagePath,
         Color? color = null)
     {
-        if (color == null) color = Color.white;
+        if (color == null) color = Colors.White;
         return ImageUtils.ProtoGameSpriteFromGameIcon(path, color);
     }
 
-    /// <summary>
-    /// Sets a sprite renderer to a particular sprite, then resizes it so that it maintains the dimensions of sizeX*sizeY.
-    /// </summary>
-    /// <summary>
-    /// Sets a sprite renderer to a particular sprite, then resizes it so that it maintains the dimensions of sizeX*sizeY.
-    /// </summary>
-    /// <summary>
-    /// Sets a sprite renderer to a particular sprite, then resizes it so that it maintains the dimensions of sizeX*sizeY.
-    /// </summary>
-    public static void SetSpriteRendererToSpriteWhileMaintainingSize(float sizeX, float sizeY, Texture texture, Sprite spriteNode)
-    {
-        float currentScaleX = spriteNode.Scale.x;
-        float currentScaleY = spriteNode.Scale.y;
-
-        spriteNode.Texture = texture;
-
-        Vector2 textureSize = texture.GetSize();
-
-        Vector3 parentScale = spriteNode.GetParent() != null ? spriteNode.GetParent().GlobalScale : new Vector3(1, 1, 1);
-
-        float scaleFactorX = (sizeX / (textureSize.x / currentScaleX)) / parentScale.x;
-        float scaleFactorY = (sizeY / (textureSize.y / currentScaleY)) / parentScale.y;
-
-        spriteNode.Scale = new Vector2(scaleFactorX, scaleFactorY);
-    }
 
 
     public static ProtoGameSprite BlackhandIcon(string name)
@@ -160,20 +131,13 @@ public static class ImageExtensions
 
     public static Texture SpriteToTexture(this Sprite sprite)
     {
-        return Texture2D.CreateExternalTexture(
-            (int)sprite.rect.width,
-            (int)sprite.rect.height,
-            TextureFormat.RGBA32,
-            false,
-            false,
-            sprite.texture.GetNativeTexturePtr()
-        );
+        throw new NotImplementedException();
     }
 
     public static void SetProtoSprite(this Image image, ProtoGameSprite protoSprite)
     {
-        image.sprite = protoSprite.ToSprite();
-        image.color = protoSprite.ToGameSpriteImage().Color;
+       // image.sprite = protoSprite.ToSprite();
+        //image.color = protoSprite.ToGameSpriteImage().Color;
 
     }
     /// <summary>
@@ -187,7 +151,7 @@ public static class ImageExtensions
         var originalTextureSize = new Vector2(originalTexture.GetWidth(), originalTexture.GetHeight());
 
         // Assuming ToSprite() returns a Texture and ToGameSpriteImage().Color returns a Godot.Color
-        sprite.Texture = protoSprite.ToSprite();
+        //sprite.Texture = protoSprite.ToSprite();
         sprite.Modulate = protoSprite.ToGameSpriteImage().Color;
 
         var newTexture = sprite.Texture;
@@ -224,7 +188,7 @@ public class GameIconProtoSprite : ProtoGameSprite
         return new GameSprite
         {
             Color = Color,
-            Sprite = loaded
+            //Sprite = loaded
         };
     }
 

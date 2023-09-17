@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class BasicAllyUnit : AbstractBattleUnit
@@ -8,7 +9,7 @@ public class BasicAllyUnit : AbstractBattleUnit
         this.CurrentHp = 20;
         this.CharacterFullName = "Basic Ally";
         this.IsAlly = true;
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(color: Color.blue);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(color: Colors.Blue);
         this.IsAiControlled = false;
     }
 

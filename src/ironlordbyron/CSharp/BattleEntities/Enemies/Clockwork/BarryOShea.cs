@@ -1,3 +1,4 @@
+using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
 using System.Collections.Generic;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Enemies.Clockwork

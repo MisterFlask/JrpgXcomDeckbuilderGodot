@@ -1,3 +1,4 @@
+using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
 using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards;
 using System.Collections.Generic;
 

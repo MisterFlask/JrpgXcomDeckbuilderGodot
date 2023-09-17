@@ -36,8 +36,8 @@ public class IntentPrefab : Node2D
 
     public void Init()
     {
-        OriginalImageColor = Picture.Modulate;
-        BrighterImageColor = Picture.Modulate * 1.5f; // TODO: Adjust this to correctly brighten the color
+        //OriginalImageColor = Picture.Modulate;
+        //BrighterImageColor = Picture.Modulate * 1.5f; // TODO: Adjust this to correctly brighten the color
     }
 
     public override void _Process(float delta)
@@ -67,12 +67,12 @@ public class IntentPrefab : Node2D
 
     private void RemoveHighlights(Image spriteImage)
     {
-        spriteImage.Modulate = OriginalImageColor;
+        //spriteImage.Modulate = OriginalImageColor;
     }
 
     private void Highlight(Image spriteImage)
     {
-        spriteImage.Modulate = new Color(1, 1, 0, 1); // Yellow color
+        //spriteImage.Modulate = new Color(1, 1, 0, 1); // Yellow color
     }
 
     public void HideAndDestroy()

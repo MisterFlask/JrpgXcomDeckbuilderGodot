@@ -616,7 +616,7 @@ public class ActionManager : Node2D
 		return nextActionInFirstChild;
 	}
 
-	public void Update()
+	public void _Update()
 	{
 		var currentAction = GetCurrentOrNextAction();
 

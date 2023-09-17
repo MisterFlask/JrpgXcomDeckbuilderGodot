@@ -10,7 +10,7 @@ public abstract class AbstractMission
 
     public static string GenerateMissionName()
     {
-        return "Operation " + WordLists.GetRandomCommonAdjective() + " " + WordLists.GetRandomCommonNoun();
+        return "Operation wwww";
     }
 
     public string GenerateMissionDescriptiveText()

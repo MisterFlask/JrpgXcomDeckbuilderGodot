@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Common
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Special;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Common
 {
     public class AdaptiveTargetingAi : AbstractCard
     {

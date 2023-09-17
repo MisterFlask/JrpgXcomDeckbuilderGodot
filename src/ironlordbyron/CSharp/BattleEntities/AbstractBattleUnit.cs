@@ -7,7 +7,7 @@ public abstract class AbstractBattleUnit
 {
     public UnitSize UnitSize { get; set; } = UnitSize.SMALL;
 
-    public string Guid = UnityEditor.GUID.Generate().ToString();
+    public string UniqueId = Guid.NewGuid().ToString();
     public ProtoGameSprite ProtoSprite { get; set; } = ImageUtils.ProtoGameSpriteFromGameIcon();
 
     public bool HasStatusEffect<T>() where T : AbstractStatusEffect
@@ -245,7 +245,7 @@ public abstract class AbstractBattleUnit
     public AbstractBattleUnit CloneUnit()
     {
         var copy = (AbstractBattleUnit)this.MemberwiseClone();
-        copy.Guid = GUID.Generate().ToString();
+        copy.UniqueId = Guid.NewGuid().ToString();
         copy.InitializePersistentDeck();
         var newName = CharacterNameGenerator.GenerateCharacterName();
         copy.CurrentFatigue = MaxFatigue;

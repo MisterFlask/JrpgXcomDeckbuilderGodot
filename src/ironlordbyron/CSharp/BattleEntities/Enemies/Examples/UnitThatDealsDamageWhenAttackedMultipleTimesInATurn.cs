@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class UnitThatDealsDamageWhenAttackedMultipleTimesInATurn : AbstractEnemyUnit
@@ -6,7 +7,7 @@ public class UnitThatDealsDamageWhenAttackedMultipleTimesInATurn : AbstractEnemy
     public UnitThatDealsDamageWhenAttackedMultipleTimesInATurn()
     {
         this.CharacterFullName = "UnitThatDealsDamageWhenAttackedMultipleTimesInATurn";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Color.white);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Colors.White);
         this.MaxHp = 44;
         this.ApplyStatusEffect(new DealsDamageOnAttackMultipleTimesInATurn(), stacks: 4);
     }
@@ -28,7 +29,7 @@ public class DealsDamageOnAttackMultipleTimesInATurn : AbstractStatusEffect
     public DealsDamageOnAttackMultipleTimesInATurn()
     {
         Name = "Resentment";
-        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Color.yellow);
+        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Colors.Yellow);
     }
     public override string Description => "When attacked for the third time in a turn, deals [stacks] damage to ALL characters.";
 
@@ -56,7 +57,7 @@ public class DealtDamageThisTurnMarker : AbstractStatusEffect
     public DealtDamageThisTurnMarker()
     {
         Name = "Number of times attacked this turn.";
-        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Color.yellow);
+        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Colors.Yellow);
     }
 
     public override string Description => "Increases when this unit is attacked.";

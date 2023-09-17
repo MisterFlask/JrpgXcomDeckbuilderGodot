@@ -39,7 +39,8 @@ public static class ExtensionMethods
 
     public static void InsertIntoRandomLocation<T>(this List<T> list, T item)
     {
-        var randomIndex = UnityEngine.Random.Range(0, list.Count);
+        var randomIndex = new Random().Next(0, list.Count);
+
         list.Insert(randomIndex, item);
     }
 
@@ -47,7 +48,7 @@ public static class ExtensionMethods
     {
         return guids
          .Select(item => GameState.Instance.PersistentCharacterRoster
-         .Single(soldierInRoster => soldierInRoster.Guid == item))
+         .Single(soldierInRoster => soldierInRoster.UniqueId == item))
          .ToList();
     }
     public static List<AbstractCard> ConvertToCards(this IEnumerable<string> guids)
@@ -189,7 +190,7 @@ public static class ExtensionMethods
         var list = new List<T>();
         foreach (var item in source)
         {
-            if (UnityEngine.Random.value < percentageAsFraction)
+            if (new Random().NextDouble() < percentageAsFraction)
             {
                 list.Add(item);
             }

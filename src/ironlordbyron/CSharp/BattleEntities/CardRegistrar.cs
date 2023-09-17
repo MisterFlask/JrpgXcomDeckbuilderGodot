@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
@@ -43,12 +44,12 @@ public class CardRegistrar
 
                     ReflectiveCardCache[soldierClass.Name].Add(card);
                 }
-                Debug.Log($"Registered card {t?.Name} with soldier classes {card?.SoldierClassCardPools?.AsString(item => item?.Name)}");
+                Log.Info($"Registered card {t?.Name} with soldier classes {card?.SoldierClassCardPools?.AsString(item => item?.Name)}");
             }
         }
         foreach (var clazz in ReflectiveCardCache.Keys)
         {
-            Debug.Log($"Cards for {clazz}: {ReflectiveCardCache[clazz].Count} cards");
+            Log.Info($"Cards for {clazz}: {ReflectiveCardCache[clazz].Count} cards");
         }
         initialized = true;
     }

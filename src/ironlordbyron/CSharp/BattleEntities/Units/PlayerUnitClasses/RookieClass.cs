@@ -1,3 +1,5 @@
+using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
+using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.RookieCards;
 using System.Collections.Generic;
 using System.Linq;
 

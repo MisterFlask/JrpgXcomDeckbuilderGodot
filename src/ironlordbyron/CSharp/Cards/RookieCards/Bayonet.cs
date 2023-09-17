@@ -37,7 +37,7 @@ public class Bayonet : AbstractCard
         var cardDiscarded = action().PromptDiscardOfSingleCard();
         action().PushActionToBack("Bayonet_OnPlay", () =>
         {
-            Debug.Log("Cards discarded: " + cardDiscarded.CardsSelected.GetCardNames());
+            Log.Info("Cards discarded: " + cardDiscarded.CardsSelected.GetCardNames());
         });
     }
 

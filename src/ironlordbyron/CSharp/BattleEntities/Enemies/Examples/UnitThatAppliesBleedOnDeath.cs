@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 /**
@@ -11,7 +12,7 @@ public class Greywing : AbstractEnemyUnit
     public Greywing()
     {
         this.CharacterFullName = "Greywing";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/BlackBirdi", color: Color.white);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/BlackBirdi", color: Colors.White);
         this.MaxHp = 30;
         this.ApplyStatusEffect(new GreywingWoundOnDeath(), stacks: 4);
     }
@@ -37,7 +38,7 @@ public class GreywingWoundOnDeath : AbstractStatusEffect
     public GreywingWoundOnDeath()
     {
         Name = "Greywing's Revenge";
-        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Color.yellow);
+        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Colors.Yellow);
     }
     public override string Description => $"This applies Burning to whoever killed it equal to number of stacks.";
 

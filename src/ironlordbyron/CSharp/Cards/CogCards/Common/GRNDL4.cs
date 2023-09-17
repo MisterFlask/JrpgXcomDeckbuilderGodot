@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Common
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Common
 {
     public class GRNDL4 : AbstractCard
     {

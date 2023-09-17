@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class BasicEnemyUnit : AbstractEnemyUnit
@@ -8,7 +9,7 @@ public class BasicEnemyUnit : AbstractEnemyUnit
         this.CurrentHp = 20;
         this.CharacterFullName = "Basic Enemy";
         this.IsAlly = false;
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(color: Color.red);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(color: Colors.Red);
         this.IsAiControlled = true;
         this.StatusEffects.Add(new DyingStatusEffect());
     }

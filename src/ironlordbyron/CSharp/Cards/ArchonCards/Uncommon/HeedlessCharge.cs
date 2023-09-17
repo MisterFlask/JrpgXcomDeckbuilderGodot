@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Uncommon
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Uncommon
 {
     public class HeedlessCharge : AbstractCard
     {

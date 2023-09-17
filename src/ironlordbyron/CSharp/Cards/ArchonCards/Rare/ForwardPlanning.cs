@@ -1,5 +1,6 @@
 ﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
 using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Effects;
+using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Special;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Rare
 {

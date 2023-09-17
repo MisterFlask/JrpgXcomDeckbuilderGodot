@@ -1,4 +1,5 @@
 ﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
+using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.Stickers;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.DiabolistCards.Special
 {

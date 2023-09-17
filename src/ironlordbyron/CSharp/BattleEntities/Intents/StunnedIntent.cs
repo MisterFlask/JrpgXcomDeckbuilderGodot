@@ -1,4 +1,5 @@
 ﻿using Godot;
+using System;
 using System.Collections.Generic;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Intents
@@ -27,9 +28,8 @@ namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Intents
 
         protected override IntentPrefab GeneratePrefab(Node2D parent)
         {
-            var parentPrefab = ServiceLocator.GameObjectTemplates().AttackPrefab;
-            var returnedPrefab = parentPrefab.Spawn(parent.transform);
-            return returnedPrefab;
+            throw new NotImplementedException();
+
         }
     }
 }

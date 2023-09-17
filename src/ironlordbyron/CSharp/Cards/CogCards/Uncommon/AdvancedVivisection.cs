@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Uncommon
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Special;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Uncommon
 {
     public class AdvancedVivisection : AbstractCard
     {

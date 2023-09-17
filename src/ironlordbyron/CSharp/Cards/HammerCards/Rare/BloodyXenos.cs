@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.HammerCards.Rare
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.ArchonCards.Effects;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.HammerCards.Rare
 {
     public class BloodyXenos : AbstractCard
     {

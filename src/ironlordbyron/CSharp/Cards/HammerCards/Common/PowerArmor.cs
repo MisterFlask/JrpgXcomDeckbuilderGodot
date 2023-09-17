@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.HammerCards.Common
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.HammerCards.Common
 {
     public class PowerArmor : AbstractCard
     {

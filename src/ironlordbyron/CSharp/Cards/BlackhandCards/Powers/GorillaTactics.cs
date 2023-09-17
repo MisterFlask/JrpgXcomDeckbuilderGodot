@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.BlackhandCards.Powers
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.BlackhandCards.Powers
 {
     public class GorillaTactics : AbstractCard
     {

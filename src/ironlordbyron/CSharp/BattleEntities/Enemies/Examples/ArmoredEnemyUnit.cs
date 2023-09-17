@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class ArmoredEnemyUnit : AbstractEnemyUnit
@@ -5,7 +6,7 @@ public class ArmoredEnemyUnit : AbstractEnemyUnit
     public ArmoredEnemyUnit()
     {
         this.CharacterFullName = "ArmoredEnemy";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Color.blue);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Colors.Blue);
         this.MaxHp = 30;
         this.ApplyStatusEffect(new ArmoredStatusEffect(), stacks: 4);
     }

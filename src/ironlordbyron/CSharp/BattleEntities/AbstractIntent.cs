@@ -12,7 +12,7 @@ public abstract class AbstractIntent
         List<AbstractBattleUnit> unitsTargeted = null,
         ProtoGameSprite protoSprite = null)
     {
-        this.ProtoSprite = protoSprite ?? ImageUtils.ProtoGameSpriteFromGameIcon(color: Color.blue);
+        this.ProtoSprite = protoSprite ?? ImageUtils.ProtoGameSpriteFromGameIcon(color: Colors.Blue);
         this.Source = source;
         this.UnitsTargeted = unitsTargeted ?? new List<AbstractBattleUnit>();
     }

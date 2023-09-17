@@ -51,7 +51,7 @@ public class GameState
     public int Credits { get; set; } = 0;
     public int energy { get; set; } = 3;
     public int maxEnergy { get; set; } = 3;
-    public List<AbstractBattleUnit> PersistentCharacterRoster => CampaignMapState.Roster;
+    public List<AbstractBattleUnit> PersistentCharacterRoster => GameState.Roster;
     public List<AbstractBattleUnit> AllyUnitsInBattle { get; set; } = new List<AbstractBattleUnit>();
     public List<AbstractBattleUnit> EnemyUnitsInBattle { get; set; } = new List<AbstractBattleUnit>();
 
@@ -75,6 +75,7 @@ public class GameState
     public int Day { get; set; } = 1;
     public int Act { get; set; } = 1;
     public List<AbstractBattleUnit> AllyUnitsSentOnRun { get; set; } = new List<AbstractBattleUnit>();
+    public static List<AbstractBattleUnit> Roster { get; private set; }
 
     public List<AbstractMissionReward> AdditionalRewardsAccrued = new List<AbstractMissionReward>();
 

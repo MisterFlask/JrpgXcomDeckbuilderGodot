@@ -116,7 +116,7 @@ public class GrantsCardStickerPerk : AbstractSoldierPerk
 
     public override void OnAssignment(AbstractBattleUnit abstractBattleUnit)
     {
-        ShowDeckScreen.ShowMandatorySelectCardFromCharacterDeckScreen((cardSelected) =>
+        /*ShowDeckScreen.ShowMandatorySelectCardFromCharacterDeckScreen((cardSelected) =>
         {
             cardSelected.AddSticker(this.Effect);
 
@@ -130,6 +130,7 @@ public class GrantsCardStickerPerk : AbstractSoldierPerk
             return Effect.IsCardTagApplicable(card);
         },
         prompt: "Adds effect to card: " + Effect.CardDescriptionAddendum());
+        */
     }
 
     public override string Name()

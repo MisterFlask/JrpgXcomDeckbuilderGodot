@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class UnitThatAppliesDazedWhenStruck : AbstractEnemyUnit
@@ -5,7 +6,7 @@ public class UnitThatAppliesDazedWhenStruck : AbstractEnemyUnit
     public UnitThatAppliesDazedWhenStruck()
     {
         this.CharacterFullName = "Drone";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/Charger1", color: Color.white);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/Charger1", color: Colors.White);
         this.MaxHp = 30;
         this.ApplyStatusEffect(new ApplyDazedOnHit(), stacks: 4);
     }

@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class BrainCrab : AbstractEnemyUnit
@@ -5,7 +6,7 @@ public class BrainCrab : AbstractEnemyUnit
     public BrainCrab()
     {
         this.CharacterFullName = "Brain Crab";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Color.white);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Colors.White);
         this.MaxHp = 14;
         this.ApplyStatusEffect(new AddsParasiteOnDealingDamage(), stacks: 1);
     }
@@ -29,7 +30,7 @@ public class AddsParasiteOnDealingDamage : AbstractStatusEffect
     public AddsParasiteOnDealingDamage()
     {
         Name = "Parasitoid";
-        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Color.yellow);
+        ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon("Sprites/falling-bang", Colors.Yellow);
     }
 
 

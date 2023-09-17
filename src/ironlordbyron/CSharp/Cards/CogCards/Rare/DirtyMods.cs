@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Rare
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Special;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Rare
 {
     public class DirtyMods : AbstractCard
     {

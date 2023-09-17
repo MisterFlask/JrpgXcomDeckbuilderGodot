@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Special
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.Stickers;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.CogCards.Special
 {
     public class AutocannonSentry : AbstractCard
     {

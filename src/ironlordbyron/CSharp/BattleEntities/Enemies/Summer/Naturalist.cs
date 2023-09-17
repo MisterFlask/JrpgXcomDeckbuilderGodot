@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Enemies.EnemyPassiveAbilities;
+using System.Collections.Generic;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Enemies.Summer
 {

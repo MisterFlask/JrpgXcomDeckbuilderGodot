@@ -1,4 +1,6 @@
-﻿namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Enemies.EnemyPassiveAbilities
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Intents;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Enemies.EnemyPassiveAbilities
 {
     public class UnbalancedStatusEffect : AbstractStatusEffect
     {

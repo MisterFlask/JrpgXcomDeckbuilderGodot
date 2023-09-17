@@ -1,3 +1,5 @@
+using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
+using System;
 using System.Collections.Generic;
 
 public class Soldier : AbstractAllyUnit
@@ -16,7 +18,6 @@ public class Soldier : AbstractAllyUnit
 
     private ProtoGameSprite GetRandomSoldierProtoSpriteForClass()
     {
-        Debug.Log("looking for portrait for SoldierClass: " + SoldierClass.Name());
         if (SoldierClass?.PortraitFolder != null)
         {
             return GetPortraitForFolder("Portraits/" + SoldierClass.PortraitFolder);
@@ -31,19 +32,8 @@ public class Soldier : AbstractAllyUnit
     /// <returns></returns>
     public ProtoGameSprite GetPortraitForFolder(string resourceFolderPath)
     {
-        Sprite[] sprites = Resources.LoadAll<Sprite>(resourceFolderPath);
-        if (sprites.IsEmpty())
-        {
-            Log.Error("FAILED to find soldier sprite for path: " + resourceFolderPath + "; using default placeholder instead");
-            return new GameIconProtoSprite();
-        }
-        var filePath = sprites[UnityEngine.Random.Range(0, sprites.Length)].name;
-        var protoGameSprite = new GameIconProtoSprite
-        {
-            SpritePath = resourceFolderPath + "/" + filePath,
-            Color = Color.white
-        };
-        return protoGameSprite;
+        //todo
+        throw new NotImplementedException();
     }
 
     public static AbstractBattleUnit GenerateFreshRookie()

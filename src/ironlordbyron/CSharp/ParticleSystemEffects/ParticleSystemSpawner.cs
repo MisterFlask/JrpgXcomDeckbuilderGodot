@@ -18,11 +18,8 @@ public class ParticleSystemSpawner : Node
 
     private void MoveParticleSystemToUiBoundingBox(Particles2D systemToNormalize, Transform2D intendedBoundingBox)
     {
-        var screenLocationOfIntendedPosition = uiCamera.UnprojectPosition(intendedBoundingBox.origin.ToVector3()).ToVector2();
-        var worldLocationInParticleCameraOfIntendedPosition = particleCamera.ProjectPosition(screenLocationOfIntendedPosition.ToVector3()).ToVector2();
-        systemToNormalize.GlobalPosition = worldLocationInParticleCameraOfIntendedPosition;
+        throw new NotImplementedException();
 
-        GD.Print($"INTENDED: {intendedBoundingBox.origin.x}, {intendedBoundingBox.origin.y} ACTUAL: {systemToNormalize.GlobalPosition.x}, {systemToNormalize.GlobalPosition.y}");
     }
 
     const string DefaultParticleSystemPath = "res://SpecialEffects/Ricochet_normal.tscn";
@@ -41,36 +38,8 @@ public class ParticleSystemSpawner : Node
 
     public ParticleSystemContainer PlaceParticleSystem(ProtoParticleSystem particleSystem, Transform2D intendedBoundingBox, Action afterAnimationIsFinishedAction = null, Node parent = null)
     {
-        if (parent == null)
-        {
-            parent = particleCamera;
-        }
+        throw new NotImplementedException();
 
-        PackedScene loadedPrefab = (PackedScene)GD.Load(particleSystem.PrefabPath);
-        if (loadedPrefab == null)
-        {
-            GD.PrintErr("Could not load particles from location: " + particleSystem.PrefabPath + "; using meeple instead");
-            loadedPrefab = (PackedScene)GD.Load(DefaultParticleSystemPath);
-        }
-
-        Particles2D instance = (Particles2D)loadedPrefab.Instance();
-        parent.AddChild(instance);
-
-        MoveParticleSystemToUiBoundingBox(instance, intendedBoundingBox);
-        instance.Scale = new Vector2(particleSystem.SizeRatio, particleSystem.SizeRatio);
-        instance.Emitting = true;
-
-        // Implement your layer setting logic here
-        // ...
-
-        var container = new ParticleSystemContainer
-        {
-            Particles = instance,
-            GoodUntil = DateTime.Now + TimeSpan.FromSeconds(particleSystem.KillAfterNumSeconds)
-        };
-
-        // ...
-        // (Continue as in your original script, adjusting for Godot's APIs)
     }
 
     public override void _Process(float delta)
@@ -128,6 +97,8 @@ public class ParticleSystemContainer
 
     public bool ShouldKill()
     {
+        throw new NotImplementedException();
+
         if (Particles == null)
         {
             return true;
@@ -140,10 +111,6 @@ public class ParticleSystemContainer
 
         if (OnlyRunTillFinished)
         {
-            if (!Particles.isPlaying)
-            {
-                return true;
-            }
         }
 
         return false;
@@ -158,7 +125,7 @@ public class ParticleSystemContainer
 
         if (ShouldKill())
         {
-            GameObject.Destroy(Particles.gameObject);
+            //GameObject.Destroy(Particles.gameObject);
             AfterAnimationIsFinishedAction();
         }
     }

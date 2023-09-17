@@ -1,4 +1,5 @@
-﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
+﻿using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.StatusEffects;
+using GodotStsXcomalike.src.ironlordbyron.CSharp.BattleEntities.Units.PlayerUnitClasses;
 
 namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.HammerCards.Uncommon
 {

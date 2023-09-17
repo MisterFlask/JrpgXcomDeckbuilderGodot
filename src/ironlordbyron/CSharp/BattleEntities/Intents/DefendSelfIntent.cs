@@ -1,4 +1,6 @@
 using Godot;
+using System;
+
 public class DefendSelfIntent : AbstractIntent
 {
     private int baseDefenseGranted;
@@ -14,8 +16,7 @@ public class DefendSelfIntent : AbstractIntent
     }
     protected override IntentPrefab GeneratePrefab(Node2D parent)
     {
-        var parentPrefab = ServiceLocator.GameObjectTemplates().DefendPrefab;
-        return parentPrefab.Spawn(parent.transform);
+        throw new NotImplementedException();
     }
 
     protected override void Execute()

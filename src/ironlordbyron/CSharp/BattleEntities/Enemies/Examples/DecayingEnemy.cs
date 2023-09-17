@@ -1,3 +1,4 @@
+using Godot;
 using System.Collections.Generic;
 
 public class DecayingEnemy : AbstractEnemyUnit
@@ -7,7 +8,7 @@ public class DecayingEnemy : AbstractEnemyUnit
     public DecayingEnemy()
     {
         this.CharacterFullName = "DecayingEnemy";
-        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Color.white);
+        this.ProtoSprite = ImageUtils.ProtoGameSpriteFromGameIcon(path: "Sprites/Enemies/Machines/RoboVAK", color: Colors.White);
         this.MaxHp = 300;
         this.ApplyStatusEffect(new MalfunctioningStatusEffect(), stacks: 1);
     }
