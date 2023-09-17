@@ -1,0 +1,29 @@
+﻿using System.Linq;
+
+namespace GodotStsXcomalike.src.ironlordbyron.CSharp.Cards.SifterCards.Common
+{
+    public class AvoidConsequences : AbstractCard
+    {
+        // apply 6 defense.  Applies 5 more defense for EACH attack with "Buster" in your deck.
+
+        public AvoidConsequences()
+        {
+            SetCommonCardAttributes("But First They Must Catch You", Rarity.COMMON, TargetType.ENEMY, CardType.AttackCard, 1);
+
+            ProtoSprite =
+                ProtoGameSprite.ArchonIcon("spy");
+        }
+
+        public override string DescriptionInner()
+        {
+            return $"Apply {DisplayedDefense()} defense.  Applies 5 more defense for EACH attack card with 'Buster' in your draw, hand and discard piles.";
+        }
+
+        public override void OnPlay(AbstractBattleUnit target, EnergyPaidInformation energyPaid)
+        {
+            var busterCardsInDeck = state().Deck.DrawHandAndDiscardPiles
+                .Where(item => item.GetDamageModifierOfType<BusterDamageModifier>() != null).Count();
+            action().ApplyDefense(target, Owner, 6 + 5 * busterCardsInDeck);
+        }
+    }
+}
