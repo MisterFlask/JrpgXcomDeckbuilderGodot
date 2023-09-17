@@ -218,7 +218,7 @@ const CostsState := {
 const ARRAY_PROPERTY_JOIN := ' - '
 # If this is set to false, tokens on cards
 # will not be removed when they exit the board
-const TOKENS_ONLY_ON_BOARD := true
+const TOKENS_ONLY_ON_BOARD := false
 # If true, each token will have a convenient +/- button when expanded
 # to allow the player to add a remove more of the same
 const SHOW_TOKEN_BUTTONS := false

@@ -249,10 +249,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/core/CardViewer/DeckBuilder/QuantityNumberButton.gd"
 }, {
-"base": "ScriptProperties",
+"base": "Reference",
 "class": "SP",
 "language": "GDScript",
-"path": "res://src/custom/SP.gd"
+"path": "res://src/ironlordbyron_cgf/SP.gd"
 }, {
 "base": "ScriptObject",
 "class": "ScriptAlter",
