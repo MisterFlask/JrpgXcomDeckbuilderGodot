@@ -32,7 +32,7 @@ func _on_Flip_pressed() -> void:
 
 # Demo hover button which adds a selection of random tokens
 func _on_AddToken_pressed() -> void:
-	var valid_tokens := ['tech','gold coin','blood','plasma']
+	var valid_tokens := ['tech','gold coin','blood','plasma', 'void', 'magic']
 	# warning-ignore:return_value_discarded
 	owner_node.tokens.mod_token(valid_tokens[CFUtils.randi() % len(valid_tokens)], 1)
 
